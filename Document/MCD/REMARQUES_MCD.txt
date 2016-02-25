@@ -1,0 +1,4 @@
+1/ternaire avec CV et DIPLOME A CASSER mettre 2 association
+2/ dossier et lettre de motive en ternaire
+3/Comment modéliser l’administratif ->faire une entite verificateur admin
+4/mauvaises valuations
