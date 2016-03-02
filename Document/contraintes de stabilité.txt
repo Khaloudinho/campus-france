@@ -1,0 +1,29 @@
+Contraintes de statbilité:
+
+Pour chaque entitée on liste les attributs qui ne peuvent pas changer.
+
+//contestable
+Pays:
+id
+libelle
+
+Personne:
+
+lieuDeNaissance
+dateNaissance
+sexe
+
+Candidature:
+idCandidature
+	
+Diplome:
+idDiplome
+
+//contestable
+Localisation:
+ville
+codepostal
+
+Formation:
+idFormation
+niveauFormation
