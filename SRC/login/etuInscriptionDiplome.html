@@ -106,13 +106,13 @@
                 <div class="demo-list-action mdl-list">
                 <div class="mdl-list__item">
                     <span class="mdl-list__item-primary-content">
-                    <i class="material-icons">hourglass_empty</i>
+                    <i class="material-icons">done</i>
                     <span>Informations administratives</span>
                     </span>
                 </div>
                 <div class="mdl-list__item">
                     <span class="mdl-list__item-primary-content">
-                    <i class="material-icons">hourglass_empty</i>
+                    <i class="material-icons">done</i>
                     <span>CV</span>
                     </span>
                 </div>
@@ -130,102 +130,23 @@
                 </div>
                 
                 </div>
-              
-              <p>
-                <h4>Informations administratives</h4>
-                  <!-- Simple Textfield -->
-                <form action="etuInscriptionCV.html" method="GET">
-                    
-                    
-                <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="nom">
-                <label class="mdl-textfield__label" for="nom">Nom</label>
-                </div>
-                
-                <br>
-                
-                <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="nom">
-                <label class="mdl-textfield__label" for="nom">Prénom</label>
-                </div>
-                
-                <br>
-                
-                Sexe : <br>
-                
-                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
-                <span class="mdl-radio__label">Homme</span>
-                </label><br>
-                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-                <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
-                <span class="mdl-radio__label">Femme</span>
-                </label>
-                
-                <br><br>
                 
                 <div class="mdl-textfield mdl-js-textfield">
                 <input class="mdl-textfield__input" type="text" id="form_actu">
-                <label class="mdl-textfield__label" for="form_actu">Formation actuelle</label>
-                </div>
-                
-                <br><br>
-                
-                
-                
-                <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="ville">
-                <label class="mdl-textfield__label" for="ville">Ville de naissance</label>
-                </div>
-                
-                <br>
-                Date de naissance : 
-                <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="date" id="date">
-                </div>
-                
-                <br><br>
-                
-                <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="nat">
-                <label class="mdl-textfield__label" for="nat">Nationalité</label>
+                <label class="mdl-textfield__label" for="form_actu">Libellé du diplôme</label>
                 </div>
                 
                 <br>
                 
                 <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="mail" id="adresse">
-                <label class="mdl-textfield__label" for="adresse">Adresse complète</label>
+                <input class="mdl-textfield__input" type="text" id="form_actu">
+                <label class="mdl-textfield__label" for="form_actu">Niveau (BAC+1, BAC+2...)</label>
                 </div>
-                
-                <br><br>
-                
-                <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="mail" id="mail">
-                <label class="mdl-textfield__label" for="mail">Adresse email</label>
-                </div>
-                
-                <br>
-                
-                <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="password" id="password">
-                <label class="mdl-textfield__label" for="password">Mot de passe</label>
-                </div>
-                
-                <br>
-                
-                <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="password" id="password">
-                <label class="mdl-textfield__label" for="password">Confirmation mot de passe</label>
-                </div>
-                
-                
-                <br><br>
-                
-                
-                 <p>
-                <h4>CV - Téléchargement (uniquement au format PDF)</h4>
+              
+              <p>
+                <h5>Téléchargement du diplôme (uniquement au format PDF)</h5>
                   <!-- Simple Textfield -->
+                <form action="#" id="form1">
                     
                     
                 <div class="mdl-textfield mdl-js-textfield">
@@ -233,26 +154,26 @@
                 </div>
                 
                 <br><br>
-                </p>
                 
-                <br><br>
-                
+                <h5>Téléchargement du relevé de notes (uniquement au format PDF)</h5>
                 <div class="mdl-textfield mdl-js-textfield">
-                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-                    <span class="mdl-checkbox__label">Je confirme que mes informations sont correctes</span>
-                </label>
+                <input type="file" id="fichier" accept="application/pdf" required>
                 </div>
-                
-               
                 
                 <br><br><br>
                 
                 <div class="mdl-textfield mdl-js-textfield">
-                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                Passer à l'étape suivante
+                <button type="submit" form="form1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Ajouter un autre diplôme supplémentaire
                 </button>
                 </div>
+
+                <div class="mdl-textfield mdl-js-textfield">
+                <button type="submit" form="form1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                J'ai terminé, étape suivante
+                </button>
+                </div>
+                
                 </form>
               </p>
           </div>
